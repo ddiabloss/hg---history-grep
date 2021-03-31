@@ -1,0 +1,12 @@
+#!/bin/sh
+#ls
+#cat /home/suchy/.bash_history
+#clear
+
+if [ -z "$1" ]
+        then
+            echo 'need to search for something, please try again.'
+            exit
+fi
+cat ~/.bash_history | grep $1
+
